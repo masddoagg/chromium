@@ -1,0 +1,11 @@
+{
+  "name": "chromium-fast-kasmvnc",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [6901],
+  "postStartCommand": "bash /workspace/.devcontainer/startup.sh",
+  "remoteUser": "vscode",
+  "runArgs": ["--cpus=8", "--memory=12g"],
+  "machine": "standard-8"
+}
